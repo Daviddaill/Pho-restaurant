@@ -6,8 +6,7 @@
     position: relative;
     /* with background image i used linear-gradients to get an opacity effect on the image without affecting  the children of the element*/
     background-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)),url('./resource/image/Menu-page/menu-baner.png');
-    background-size:contain;
-    
+    background-size:contain; 
 }
 
 p {
@@ -16,15 +15,16 @@ p {
 
 /* title   */
 .title-menu {
+    position:fixed;
+    z-index:1;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 20px;
     height: 100px;
     background-color:white;
     color: #323031;
+    margin-top: 0px;
     font-size: 30px;
-    opacity: 0.9;
-    margin-top:20px;
     font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -42,8 +42,8 @@ p {
     justify-content: flex-start;
     text-align:center;
     position: sticky;
-    margin-top:20px;
-    top: 30px;
+    margin-top:100px;
+    top: 100px;
     align-self: flex-start  /* set to flex-start  to make the sticky position working when using flex-box */
 }
 .nav-menu a{
